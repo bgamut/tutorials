@@ -1,0 +1,11 @@
+#N canvas 4 25 642 300 12;
+#X obj 55 72 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 55 150 dac~;
+#X msg 55 98 open /Users/bernardahn/Downloads/strong_pulse.wav \, 2;
+#X obj 137 124 readsf~ 1;
+#X obj 55 124 readsf~ 1;
+#X connect 0 0 2 0;
+#X connect 2 0 4 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 1;
+#X connect 4 0 1 0;
